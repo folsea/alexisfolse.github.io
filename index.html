@@ -1,119 +1,168 @@
 <!DOCTYPE html>
 <html>
-    <!--Head-->
+    
+    <!-- Head -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
-        <title>Alexis Folse Let's Change the World</title>
-        <link rel="stylesheet" type="text/css" href="./css/At_css.css">
+        <title>Alexis Folse</title>
+        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+        <link rel="stylesheet" type="text/css" href="./css/css.css">
     </head>
 
-    <!--Body-->
-    <body class="Background">
-        
-        <!--Navbar-->
+    <!-- Body -->
+    <body class="Background">   
+
+        <!-- Navbar -->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <!-- New section added -->
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
-        <!--Breaks inserted to add space between navbar and the first heading-->
-        <br>
-        <br>
-
-        <!--Background video-->
+        <!-- Background video -->
         <div id="Home">
             <video autoplay muted loop id="Typing_Video">
-                <source src="./img/1.mp4" type="video/mp4">
-                <!--Display message if video fails to run-->
+                <source src="./pic/1.mp4" type="video/mp4">
+                <!-- Display message if video fails to run -->
                 Your browser does not support HTML5 video.
             </video>
         </div>
 
-        <!--Video text-->
+        <!-- Video text -->
         <div class="Video_Text">
-            <h1 class="white-text">Alexis Folse Using Tech to make change</h1>
+            <h1 class="white-text">Alexis Folse's Professional Website</h1>
             <strong>
                 <p class="center">
-                    <q>Any Sufficiently advanced technology is equivalent to magic.
+                    <q>Any Suffiently advanced technology is equivalent to magic. 
                     </q>
-                    <br> -Arthur C.Clarke (Author)
+                    <br> -Arthur C. Clarke<br>
                     <br>
-                    <br> My name is Alexis Folse. Welcome to my portfolio website. On it, I will tell you about my self, background, and experience.
+                    My name is Alexis Folse. Wlecome to my protfolio website. On it, I will tell you about myself, background, and experiecne.  
                     <br>
-                    <br> Thank you for stopping by a let me know how I can help you change the world or at least your world! 
+                    <br>Thank you for stopping by.
                 </p>
             </strong>
         </div>
 
-        <!--About section-->
-        <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2">
-                <img src="./img/1.jpg" alt="first soccer game">
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./pic/1.jpg" alt="prof pict">
+                        <div class="text">Welcome to my page!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./pic/4.jpg" alt="handsom boy and me"> 
+                        <div class="text">I am a mom always.</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./pic/4.jpeg" alt="html, css, java ">
+                        <div class="text">Who likes to play with websites.</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./pic/python.png" alt="python">
+                        <div class="text">I have even worked with some older codes. </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./pic/3.jpg" alt="forward"> 
+                        <div class="text">If you are ready to move forward.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./pic/5.jpg" alt="contact ">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
             </div>
-            <!--Right column-->
+        </div>
+
+        <!-- About section -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2">
+                <img src="./pic/6.jpg" alt="Replace with a picture of your choosing">
+            </div>
+            <!-- Right column -->
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a single mom who beleives we can change the world for the for the better for our kids. I beleive this can be done through big and little things.
-                    I have learned and still learning several programing languages, so I can help create websites and databases for my family and yours, but I am also 
-                    learning data science so I can potentially help change the world by spotting trend that help and hurt it.  
+                    I am a single mom who beleives we can change the world for the betther for our kids. I beleive this can be done throught big and little things. 
+                    I have learned and still learning several programing languages, so I can help create  websites and databases for my family and yours, but I am also 
+                    learning data science so I can potenially help change the world  by spotting trend that help and hurt it. 
                     <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: Python, HTML, CSS, JavaScript, SQL, and more, and I am alway learning. 
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, and more, I am still learning. 
                     <br>
-                    <br>I am a data scienctist that beleive they can change the world, a website developer with a unique style. <a href="#Contact">Contact</a> me below!
+                    <br>I am a data sciencetist that believe they can change the world, a website developer with a unique style. <a onclick="openForm()" class="contact">Contact</a> me below!
                 </p>
             </div>
         </div>
 
-        <!--GitHub section-->
+        <!-- GitHub section -->
         <div class="Row" id="GitHub">
-            <!--Left column-->
+            <!-- Left column -->
             <div class="Column_1">
                 <h1>GitHub</h1>
-                <p>
-                    You can view my coding projects on my GitHub profile here:
+                <p>You can view my coding projects on my GitHub profile here:
                     <br>
                     <p class="center"><a href="https://github.com/folsea" target="_blank">Alexis Folse</a></p>
                 </p>
             </div>
-            <!--Right column-->
+            <!-- Right column -->
             <div class="Column_2">
-                <a href="https://github.com/the-tech-academy" target="_blank"><img src="./img/2.jpg" alt="Fork me at git hub"></a>
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="./pic/2.jpg"></a>
             </div>
         </div>
 
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="./img/3.jpg" alt="moving forward">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="https://formspree.io/f/xayvrprn" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+        <!-- Contact form -->
+        <div id="Contact">
+           <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+           <div class="form-popup" id="myForm">
+                <form action="" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
+         
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
-            </div>
+           </div>
         </div>
-
-        <!--Footer section-->
+        
+        <!-- Footer section -->
         <footer>
-            <p>
-                <p class="center">Alexis Folse, <a href="RedFireFamily.com" target="_blank">More about Alexis</a></p>
-                <br>
-            </p>
+                <p class="center">&copy Red Fire Family "MamaRoze" Alexis Folse <a href="" target="_blank">Alexis Folse</a></p><br>
         </footer>
+        <script src="./js/js.js"></script>
     </body>
 </html>
